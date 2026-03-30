@@ -27,12 +27,44 @@ footer{
     grid-area: perna;
     background-color: darkorchid;
 }
-@media only screen and(max-width){
+@media only screen and(max-width:850px){
     body{
-        grid-area: "cabeca"
-                    "corpo"
-                    "perna";
-                    grid-template-columns: auto ;
-                    grid-template-rows: 150px 50px 500px 200px;
+        grid-template-areas: 
+        "cabeca"
+        "corpo"
+        "perna";
+        grid-template-columns: auto ;
+        grid-template-rows: 150px 50px 500px 200px;
+    }   
+    aside {
+        display: none;
     }
+
+}
+
+.mae{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    border: yellow 2px solid;
+    background-color: aquamarine;
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px;
+
+}
+.img_card{
+    width: 300px;
+    height: auto;
+
+}
+.preco_card{
+    color: blueviolet;
+    font-size: xx-large;
 }
